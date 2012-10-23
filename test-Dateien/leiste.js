@@ -86,6 +86,10 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 									$( ".linkLogin" ).click();
 
 						});
+					$(document).ready(function(){
+						var offset = $(".linkLogin").first().offset();
+						$("#ggpUserDropdown").offset({left: offset.left, bottom: 50});
+					});
 				} else {
 					nl_menu.append($('<a>').addClass("linkLogin").attr({href:Drupal.settings.ggp_user.log_in_link}));
 				}
@@ -101,27 +105,23 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 			
 			
 			
-			
+			$("body").prepend(promoleiste);
+			$("body").append(seitenleiste);
 			
 			$(document).ready(function(){
-				$("body").prepend(promoleiste);
-				$("body").append(seitenleiste);
-
-
-				var offset = $(".linkLogin").first().offset();
-				$("#ggpUserDropdown").offset({left: offset.left});
-				if (typeof settings.code != 'undefined') {
-					$('#nl_lba').writeCapture().html('<script src="'+settings.code+'" type="text/javascript"></script>');
-				} else if(typeof settings.adcont != 'undefined') {
-					var off = $('#nl_lba').position();
+			
+			if (typeof settings.code != 'undefined') {
+				$('#nl_lba').writeCapture().html('<script src="'+settings.code+'" type="text/javascript"></script>');
+			} else if(typeof settings.adcont != 'undefined') {
+				var off = $('#nl_lba').position();
+				$('#'+settings.adcont).css({left: off.left, top: off.top});
+				$(window).resize(function() {
 					$('#'+settings.adcont).css({left: off.left, top: off.top});
-					$(window).resize(function() {
-						$('#'+settings.adcont).css({left: off.left, top: off.top});
-					});
-					var reposition = window.setInterval(function() {
-						$('#'+settings.adcont).css({left: off.left, top: off.top});
-					}, 1000);
-				}
+				});
+				var reposition = window.setInterval(function() {
+					$('#'+settings.adcont).css({left: off.left, top: off.top});
+				}, 1000);
+			}
 				if ( $.browser.msie && parseInt($.browser.version, 10) <= 7 ) {
 					var tmp = $("<a>");
 					$("#nl_promo").append(tmp);
@@ -131,9 +131,6 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 					$.ajax({
 						url: settings.promoUrl,
 						dataType: 'jsonp',
-						error: function(){
-							console.log("error");
-						},
 						success: function(data){
 
 							$.each(data, function(i, e) {
@@ -161,12 +158,10 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 						jsonp: 'jsonp'
 					});
 				}
-				console.log("test");
 				$.ajax({
 					url: settings.sitesUrl,
 					dataType: 'jsonp',
 					success: function(data){
-						console.log("Adding Sites START");
 						var container = $('<div id="nl_dropdown" class="dropdown" style="display: none; position: absolute; z-index: 999900;">');
 						var sites = $('<div id="nl_topsites">');
 						container.append($('<div id="nl_our_sites">').append(sites));
@@ -260,13 +255,13 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 									$("<img>").attr("src", "http://static.globalgameport.com/network/icons/"+e.ico));
 								}	
 						});
-						console.log($('#nl_footer').after(container));
+						$('#nl_netzwerkseiten').after(container);
 						
 					
 						
 						//Events Setzten
 						//Level 1 öffnen
-						$(".linkNetzwerkseiten").toggle(function(event) {
+						$("#nl_netzwerkseiten a").toggle(function(event) {
 							$("#nl_dropdown").show().toggleClass('nl_sites_open').offset({left: $(this).offset().left});
 							$(this).toggleClass('nl_netzwerkseiten_active');
 							return false;
@@ -284,7 +279,7 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 							var clicked = $(e.target);
 							if ( (clicked.parents("#nl_dropdown").length == 0 ) ) {
 								if($("#nl_dropdown").hasClass("nl_sites_open"))
-									$( ".linkNetzwerkseiten" ).click();
+									$( "#nl_netzwerkseiten a" ).click();
 								
 								if ($("#nl_sites_more").parent().hasClass("nl_sites_more_open") )
 									$("#moresites").click();
