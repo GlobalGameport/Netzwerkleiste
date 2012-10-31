@@ -13,7 +13,7 @@
 				$.extend( settings, options );
 			}
 			
-var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;clear:both;font-size:0;height:0;visibility:hidden}#nl_bg{background:url(http://static.globalgameport.com/network/bg.jpg) repeat-x scroll center top transparent;display:block;height:117px}#nl_top{width:1125px;height:92px;margin:0 auto;display:block;overflow:hidden;background:url(http://static.globalgameport.com/network/bg_balken.png) no-repeat right top}#nl_menu{width:1125px;height:25px;margin:0 auto;display:block;overflow:hidden}#nl_logo{width:194px;height:92px;float:left;display:block}#nl_promo{width:200px;height:92px;float:left;display:block;margin-top:1px}#nl_promo_load{display:block;height:90px;width:200px}#coin-slider-nl_promo{width:200px;float:left;overflow:hidden}#nl_werlead{width:728px;height:90px;float:right;display:block;padding-top:1px}#nl_netzwerkseiten a:link,#nl_netzwerkseiten a:visited{background:url(http://static.globalgameport.com/network/link_netzwerkseiten.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 70px 0 10px;width:155px}#nl_forum a:link,#nl_forum a:visited{background:url(http://static.globalgameport.com/network/link_forum.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_store a:link,#nl_store a:visited{background:url(http://static.globalgameport.com/network/link_astore.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_portal a:link,#nl_portal a:visited{background:url(http://static.globalgameport.com/network/link_portal.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 82px 0 0;width:155px}#nl_login a:link,#nl_login a:visited{background:url(http://static.globalgameport.com/network/link_userlogin.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_login.logged_in a:link,#nl_login.logged_in a:visited{background:0;font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#ggpUserDropdown{background:#0a0a0a;border-bottom-left-radius:5px;border-bottom-right-radius:5px;opacity:.7;padding:3px}#ggpUserDropdown ul{padding:0;margin:0}#ggpUserDropdown li{list-style:none;text-align:left}#ggpUserDropdown li:hover{background:#2a2a2a}#ggpUserDropdown li a{font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#nl_netzwerkseiten a:hover,#nl_netzwerkseiten a.nl_netzwerkseiten_active,#nl_forum a:hover,#nl_store a:hover,#nl_portal a:hover,#nl_login a:hover{background-position:center bottom}#social_networks{background:url(http://static.globalgameport.com/network/txt_ggp_folgen.png) no-repeat scroll left top transparent;display:block;float:right;height:25px;margin:0 50px 0 0;width:150px}a#ggp_fb:link,a#ggp_fb:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 75px;width:19px}a#ggp_fb:hover{background-position:0 -20px;text-decoration:none}a#ggp_twitter:link,a#ggp_twitter:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -19px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_twitter:hover{background-position:-19px -20px;text-decoration:none}a#ggp_yt:link,a#ggp_yt:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -39px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_yt:hover{background-position:-39px -20px;text-decoration:none}#nl_dropdown,#nl_sites_more{opacity:.9;background:#111;display:block;padding-left:4px;width:738px;margin-top:25px;margin-left:15px;font-family:arial,helvetica}#nl_dropdown img{outline:0}#nl_dropdown>div{float:left;margin:3px 0}#nl_our_sites span,#nl_our_partner span{color:#eee}#nl_dropdown ul{padding:0;margin:3px 7px 3px 0;background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top}#nl_dropdown ul>span{text-align:center;font:10pt arial,helvetica,clean;color:#eee;background:#111;font-weight:700;padding:2px 0 3px;width:100%;display:block;letter-spacing:-1px}#nl_dropdown li{list-style:none;display:block;margin:1px 0 1px 3px;background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top}#nl_dropdown a,#nl_topsites.nl_sites_more_open{color:#eee;display:block;font-size:11px;line-height:20px;padding:0 0 0 5px;text-decoration:none;text-transform:uppercase;text-align:left;cursor:pointer}#nl_topsites{width:534px;position:relative}.nl_topsites{width:260px;float:left}.nl_sites_open{display:block}.nl_sites a{padding:0 0}#nl_partner{width:180px}#nl_partner a{padding:0 5px}#nl_dropdown img{vertical-align:middle}#nl_dropdown li:hover,#nl_topsites.nl_sites_more_open #moresites{background:#b40404}#nl_dropdown li:hover a,#nl_topsites li:hover #nl_sites_more li:hover a{color:#fff;cursor:pointer}#nl_dropdown a.nl_site_ico{width:20px;height:20px;float:right;padding:0;margin:0;background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll transparent;display:block;border-left:1px solid #111}#nl_dropdown a.nl_site_ico_tw{background-position:-88px top}#nl_dropdown a.nl_site_ico_tw:hover{background-position:-88px bottom}#nl_dropdown a.nl_site_ico_yt{background-position:-128px top}#nl_dropdown a.nl_site_ico_yt:hover{background-position:-128px bottom}#nl_dropdown a.nl_site_ico_rs{background-position:-108px top}#nl_dropdown a.nl_site_ico_rs:hover{background-position:-108px bottom}#nl_dropdown a.nl_site_ico_bd{background-position:-59px top;width:29px}#nl_dropdown a.nl_site_ico_bd:hover{background-position:-59px bottom}#nl_dropdown a.nl_site_ico_fb{background-position:-148px top}#nl_dropdown a.nl_site_ico_fb:hover{background-position:-148px bottom}#nl_sites_more{display:none;z-index:999901;padding:5px 0 5px 5px}#nl_sites_more ul{float:left}#nl_sites_more li{width:230px}#nl_topsites.nl_sites_more_open #nl_sites_more{display:block;position:absolute;top:0;margin-top:-10px;left:130px}#moresites{background:#5a5a5a;font-size:9.5pt!important;font-weight:700;display:block;clear:both}a#moresites:hover{background:#06c}#moresites>span{width:20px;display:inline;background:0;font-size:1.5em}';
+			var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;clear:both;font-size:0;height:0;visibility:hidden}#nl_bg{background:url(http://static.globalgameport.com/network/bg.jpg) repeat-x scroll center top transparent;display:block;height:117px}#nl_top{width:1125px;height:92px;margin:0 auto;display:block;overflow:hidden;background:url(http://static.globalgameport.com/network/bg_balken.png) no-repeat right top}#nl_menu{width:1125px;height:25px;margin:0 auto;display:block;overflow:hidden}#nl_logo{width:194px;height:92px;float:left;display:block}#nl_promo{width:200px;height:92px;float:left;display:block;margin-top:1px}#nl_promo_load{display:block;height:90px;width:200px}#coin-slider-nl_promo{width:200px;float:left;overflow:hidden}#nl_werlead{width:728px;height:90px;float:right;display:block;padding-top:1px}#nl_netzwerkseiten a:link,#nl_netzwerkseiten a:visited{background:url(http://static.globalgameport.com/network/link_netzwerkseiten.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 70px 0 10px;width:155px}#nl_forum a:link,#nl_forum a:visited{background:url(http://static.globalgameport.com/network/link_forum.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_store a:link,#nl_store a:visited{background:url(http://static.globalgameport.com/network/link_astore.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_portal a:link,#nl_portal a:visited{background:url(http://static.globalgameport.com/network/link_portal.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 82px 0 0;width:155px}#nl_login a:link,#nl_login a:visited{background:url(http://static.globalgameport.com/network/link_userlogin.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_login.logged_in a:link,#nl_login.logged_in a:visited{background:0;font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#ggpUserDropdown{background:#0a0a0a;border-bottom-left-radius:5px;border-bottom-right-radius:5px;opacity:.7;padding:3px}#ggpUserDropdown ul{padding:0;margin:0}#ggpUserDropdown li{list-style:none;text-align:left}#ggpUserDropdown li:hover{background:#2a2a2a}#ggpUserDropdown li a{font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#nl_netzwerkseiten a:hover,#nl_netzwerkseiten a.nl_netzwerkseiten_active,#nl_forum a:hover,#nl_store a:hover,#nl_portal a:hover,#nl_login a:hover{background-position:center bottom}#social_networks{background:url(http://static.globalgameport.com/network/txt_ggp_folgen.png) no-repeat scroll left top transparent;display:block;float:right;height:25px;margin:0 50px 0 0;width:150px}a#ggp_fb:link,a#ggp_fb:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 75px;width:19px}a#ggp_fb:hover{background-position:0 -20px;text-decoration:none}a#ggp_twitter:link,a#ggp_twitter:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -19px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_twitter:hover{background-position:-19px -20px;text-decoration:none}a#ggp_yt:link,a#ggp_yt:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -39px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_yt:hover{background-position:-39px -20px;text-decoration:none}#nl_dropdown,#nl_sites_more{opacity:.9;background:#111;display:block;padding-left:4px;width:738px;margin-top:25px;margin-left:15px;font-family:arial,helvetica}#nl_dropdown img{outline:0}#nl_dropdown>div{float:left;margin:3px 0}#nl_our_sites span,#nl_our_partner span{color:#eee}#nl_dropdown ul{padding:0;margin:3px 7px 3px 0;background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top}#nl_dropdown ul>span{text-align:center;font:10pt arial,helvetica,clean;color:#eee;background:#111;font-weight:700;padding:2px 0 3px;width:100%;display:block;letter-spacing:-1px}#nl_dropdown li{list-style:none;display:block;margin:1px 0 1px 3px;background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top}#nl_dropdown a,#nl_topsites.nl_sites_more_open{color:#eee;display:block;font-size:11px;line-height:20px;padding:0 0 0 5px;text-decoration:none;text-transform:uppercase;text-align:left;cursor:pointer}#nl_topsites{width:534px;position:relative}.nl_topsites{width:260px;float:left}.nl_sites_open{display:block}.nl_sites a{padding:0 0}#nl_partner{width:180px}#nl_partner a{padding:0 5px}#nl_dropdown img{vertical-align:middle}#nl_dropdown li:hover,#nl_topsites.nl_sites_more_open #moresites{background:#b40404}#nl_dropdown li:hover a,#nl_topsites li:hover #nl_sites_more li:hover a{color:#fff;cursor:pointer}#nl_dropdown a.nl_site_ico{width:20px;height:20px;float:right;padding:0;margin:0;background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll transparent;display:block;border-left:1px solid #111}#nl_dropdown a.nl_site_ico_tw{background-position:-88px top}#nl_dropdown a.nl_site_ico_tw:hover{background-position:-88px bottom}#nl_dropdown a.nl_site_ico_yt{background-position:-128px top}#nl_dropdown a.nl_site_ico_yt:hover{background-position:-128px bottom}#nl_dropdown a.nl_site_ico_rs{background-position:-108px top}#nl_dropdown a.nl_site_ico_rs:hover{background-position:-108px bottom}#nl_dropdown a.nl_site_ico_bd{background-position:-59px top;width:29px}#nl_dropdown a.nl_site_ico_bd:hover{background-position:-59px bottom}#nl_dropdown a.nl_site_ico_fb{background-position:-148px top}#nl_dropdown a.nl_site_ico_fb:hover{background-position:-148px bottom}#nl_sites_more{display:none;z-index:999901;padding:5px 0 5px 5px}#nl_sites_more ul{float:left}#nl_sites_more li{width:230px}#nl_topsites.nl_sites_more_open #nl_sites_more{display:block;position:absolute;top:0;margin-top:-10px;left:130px}#moresites{background:#5a5a5a;font-size:9.5pt!important;font-weight:700;display:block;clear:both}a#moresites:hover{background:#06c}#moresites>span{width:20px;display:inline;background:0;font-size:1.5em}';
 		
 			if(typeof $.fn.CoinSlider == 'undefined') {
 				// load coin slider js (getscript of jQuery prevents caching so using ajax)
@@ -61,36 +61,49 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 			
 			var nl_menu = $("<nav>");
 			nl_menu.append($('<a>').addClass("linkNetzwerkseiten").attr({href:"javascript:void(0);"}).text("Netzwerkseiten"));
-			nl_menu.append($('<a>').addClass("linkBoard").attr({href:"http://www.globalgameport.com", "target":"_blank"}).text("Forum"));
-			nl_menu.append($('<a>').addClass("linkShop").attr({href:"http://shop.globalgameport.com", "target":"_blank"}).text("Shop"));
-             //nl_menu.append($('<a>').addClass("linkPortal").html("http://portal.globalgameport.com").attr({"target":"_blank"}));
-             nl_footer.append(nl_menu);
-			if(typeof Drupal !== "undefined" && Drupal.settings.ggp_user) {
-				if ( Drupal.settings.ggp_user.logged_in) {
-					var container = $('<ul id="ggpUserDropdown" style="display: none; position: absolute; z-index: 999999;">')
+			nl_menu.append($('<a>').addClass("linkBoard").attr({href:"http://www.globalgameport.com", target:"_blank"}).text("Forum"));
+			nl_menu.append($('<a>').addClass("linkShop").attr({href:"http://shop.globalgameport.com", target:"_blank"}).text("Shop"));
+            //nl_menu.append($('<a>').addClass("linkPortal").html("http://portal.globalgameport.com").attr({target:"_blank"}));
+            nl_footer.append(nl_menu);
+
+            var userDiv = $('<div>').addClass('userDiv');
+            nl_footer.append(userDiv);
+            if(user = userLoggedIn()){
+				var container = $('<ul id="ggpUserDropdown" style="display: none; position: absolute; z-index: 999999;">')
 					.append($('<li><a target="_blank" href="'+Drupal.settings.ggp_user.profile+'">Edit Profile</a></li>'))
 					.append($('<li><a href="/logout">Logout</a></li>'));
 					
-					nl_menu.append($('<a>').addClass("linkLogin").addClass("loggedIn").text(Drupal.settings.ggp_user.username).attr({href:Drupal.settings.ggp_user.profile, "target":"_blank"})).append(container);
-					
-					$(".linkLogin", nl_menu).toggle(function() {
-						$("#ggpUserDropdown").show();
-						$(this).addClass("opened");
-					},function(){
-						$("#ggpUserDropdown").hide();
-						$(this).removeClass("opened");
-					});
-					$(document).bind('click', function(e) {
-							var clicked = $(e.target);
-								if($(".linkLogin").hasClass("opened"))
-									$( ".linkLogin" ).click();
+				userDiv.append(
+					$('<div>').addClass("user").append(
+						$('<a>').text(user.username).attr({href:user.profile, target:"_blank"})
+					)
 
-						});
-				} else {
-					nl_menu.append($('<a>').addClass("linkLogin").attr({href:Drupal.settings.ggp_user.log_in_link}));
-				}
+				); //.append(container);
+					
+				$(".linkLogin", nl_menu).toggle(function() {
+					$("#ggpUserDropdown").show();
+					$(this).addClass("opened");
+				},function(){
+					$("#ggpUserDropdown").hide();
+					$(this).removeClass("opened");
+				});
+				$(document).bind('click', function(e) {
+					var clicked = $(e.target);
+					if($(".linkLogin").hasClass("opened"))
+						$( ".linkLogin" ).click();
+					});
+			} else {
+				nl_menu.append($('<a>').addClass("linkLogin").attr({href:Drupal.settings.ggp_user.log_in_link}));
 			}
-			
+			function userLoggedIn() {
+				if(typeof Drupal !== "undefined" && Drupal.settings.ggp_user) {
+					if ( Drupal.settings.ggp_user.logged_in) {
+						var user = Drupal.settings.ggp_user;
+						return user;
+					}
+				}
+				return false;
+			}
 			nl_footer.append($('<div id="social_networks">')
 				.append($('<a id="ggp_fb" target="_blank" href="http://www.facebook.com/globalgameport"></a>'))
 
@@ -108,8 +121,6 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 				$("body").append(seitenleiste);
 
 
-				var offset = $(".linkLogin").first().offset();
-				$("#ggpUserDropdown").offset({left: offset.left});
 				if (typeof settings.code != 'undefined') {
 					$('#nl_lba').writeCapture().html('<script src="'+settings.code+'" type="text/javascript"></script>');
 				} else if(typeof settings.adcont != 'undefined') {
@@ -187,7 +198,7 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 								sites.append(ul);
 							}
 							// Internet Explorer Problem 
-							var seite = $("<li>").html($("<a>").attr("href", e.href).attr("target","_blank").text(e.name));
+							var seite = $("<li>").html($("<a>").addClass('siteLink').attr("href", e.href).attr("target","_blank").text(e.name));
 							ul.append(seite);
 						
 						
@@ -223,10 +234,8 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 							if(i % 20 == 0) {
 								ul = $("<ul>");
 								$("#nl_sites_more", sites).append(ul);
-								$("#nl_sites_more", sites).width(240*d).height((20 * 21)+5);	
-								
-								
-														
+								//$("#nl_sites_more", sites).width(240*d).height((20 * 21)+5);	
+							
 							}
 							var seite = $("<li>")
 							.html(
@@ -234,6 +243,7 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 								.attr("href", e.href)
 								.attr("target","_blank")
 								.text(e.name)
+								.addClass('siteLink')
 							);
 							ul.append(seite);
 							
@@ -290,8 +300,7 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 									$("#moresites").click();
 							}
 
-						}); 
-						
+						}); 	
 					},
 					jsonp:'jsonp'
 				});

@@ -126,9 +126,10 @@ vertical-align:middle;
 #nl_topsites.nl_sites_more_open #moresites {
 	background:#B40404;
 }*/
-#nl_dropdown li:hover a,
-#nl_topsites  li:hover #nl_sites_more li:hover a{
+#nl_dropdown li a.siteLink:hover,
+#nl_topsites  li:hover #nl_sites_more li a.siteLink:hover{
 	color:#fff;
+	background:#262626;
 	cursor:pointer;
 } 
 
@@ -154,29 +155,30 @@ vertical-align:middle;
 #nl_dropdown a.nl_site_ico_fb:hover{background-position:-148px bottom}
 
 #nl_sites_more{
-display:none;
-z-index:999901;
-padding:5px 0 5px 5px;
-}
-#nl_sites_more ul {
-float:left;
-}
-#nl_sites_more li{
-width:230px;
+	display:none;
+	z-index:999901;
+	padding:5px 0 5px 5px;
+	background:lighten(@footerColor, 20%);
+
+	ul {
+		float:left;
+		li{
+			width:230px;
+		}
+	}
 }
 /*#nl_sites li:hover #nl_sites_more,*/
 #nl_topsites.nl_sites_more_open #nl_sites_more {
-display:block;
-position:absolute;
-top:0;
-margin-top:-10px;
-left:130px;
+	display:block;
+	position:absolute;
+	margin-top:-10px;
+	left:130px;
 }
 
 /* Weitere Seiten + Hover */
 #moresites
 {
-	background:#5a5a5a;
+	background:@footerColor;
 	font-size:9.5pt !important;
 	font-weight:bold;
 	display:block;
@@ -250,15 +252,15 @@ footer{position:fixed;z-index:11000;bottom:0;width:100%;max-height:78px;}
 			color:@footerFontColorHover;
 		}
 	}
-	/*
+	
 	.linkNetzwerkseiten,
 	.linkBoard,
 	.linkShop,
-	.comment:after{
+	.userDiv:after{
 		background-color:transparent;
-		background-image:url(/static/css/assets/sprite-footer.png);
+		//background-image:url(/static/css/assets/sprite-footer.png);
 		background-repeat:no-repeat;
-		}*/
+		}
 	.linkNetzwerkseiten,
 	.linkBoard,
 	.linkShop{
@@ -266,42 +268,115 @@ footer{position:fixed;z-index:11000;bottom:0;width:100%;max-height:78px;}
 	}
 	.linkNetzwerkseiten{
 		/*background-position:20px -250px;*/
-		background-color:transparent;
 		background-image:url(../images/ggp.png);
-		background-repeat:no-repeat;
 	}
 	.linkNetzwerkseiten:hover,
 	.nl_netzwerkseiten_active{
-		background-color:transparent;
 		background-image:url(../images/ggp.hover.png);
-		background-repeat:no-repeat;
 		/*background-position:20px -300px;*/
 	}
 	.linkBoard{
-		background-color:transparent;
 		background-image:url(../images/appbar.book.open.writing.png);
-		background-repeat:no-repeat;
 		/*background-position:20px -350px;*/
 	}
 	.linkBoard:hover{
-		background-color:transparent;
+		
 		background-image:url(../images/appbar.book.open.writing.hover.png);
-		background-repeat:no-repeat;
 		/*background-position:20px -400px;*/
 	}
 	.linkShop{
-		background-color:transparent;
 		background-image:url(../images/appbar.heart.outline.png);
-		background-repeat:no-repeat;
 		/*background-position:20px 0;*/
 	}
 	.linkShop:hover{
-		background-color:transparent;
 		background-image:url(../images/appbar.heart.outline.hover.png);
-		background-repeat:no-repeat;
 		/*background-position:20px -50px;*/
 	}
-	a{color:#148fee;text-decoration:none;font-family:'Open Sans',arial,helvetica,sans-serif;font-size:12px;line-height:1.5em;}
-	a:hover{color:#0e72c0;}
-	.displayNone{display:none!important;}
+	a{
+		color:#148fee;
+		text-decoration:none;
+		font-family:'Open Sans',arial,helvetica,sans-serif;
+		font-size:12px;
+		line-height:1.5em;
+	}
+	a:hover{
+		color:#0e72c0;
+	}
+	.displayNone{
+		display:none!important;
+	}
+
+	.userDiv{
+		display:inline-block;
+		vertical-align:top;
+		height:50px;
+		padding-left:520px;
+		color:#fff;
+		right:0;
+		top:0;
+		text-align:left;
+		color:#999;
+		font-size:11px;
+		line-height:1.25em;
+		white-space:nowrap;
+	}
+	.comment, 
+	.user{
+		display:inline-block;vertical-align:top;white-space:normal;
+	}
+ 	.comment{
+ 		position:relative;
+ 		max-width:370px;
+ 		height:50px;
+ 		padding:0 15px 0 14px;
+ 		margin-right:10px;
+ 		background-color:#191919;
+ 	}
+ 	.comment:after{
+ 		content:'';
+ 		display:block;
+ 		position:absolute;
+ 		top:19px;
+ 		right:-6px;
+ 		width:6px;
+ 		height:12px;
+ 		background-position:0 -219px;
+ 	}
+ 	.comment div,
+ 	.comment span{
+ 		max-width:369px;
+ 		display:inline-block;
+ 		vertical-align:middle;
+ 		overflow:hidden;
+ 		line-height:13px;
+ 		min-height:15px;
+ 		max-height:40px;
+ 	}
+ 	.comment span{
+ 		width:1px;
+ 		height:50px;
+ 		max-height:50px;
+ 	} 
+ 	.user{
+ 		padding:8px 15px 8px 0;
+ 	}
+
+ 	
+ 	
+ 	.user img{
+ 	 	width:34px;
+ 	 	height:34px;
+ 	 	padding-right:10px;
+ 	 }
+ 	.user img,
+ 	.user p{
+ 		display:inline-block;
+ 		vertical-align:middle;
+ 	}
+ 	.user span{
+ 		color:#fff;
+ 	}
+ 	.user a{
+ 		color:#009925;
+ 	}
 }
