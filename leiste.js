@@ -3,9 +3,11 @@
 	var settings = {
 			//'code'    : '',
 			//'adcont'	: '',
-			'promoUrl'		: 'http://static.globalgameport.com/network/promo.php',
+			'promoUrl'	: 'http://static.globalgameport.com/network/promo.php',
 			'sitesUrl' 	: 'http://static.globalgameport.com/network/sites.php',
-			'version'	: '1.4.2'
+			'style'	: 'http://static.globalgameport.com/network/style.min.css',
+			'version'	: '1.4.3',
+			'hide_top'  : false
 		};
 
 
@@ -14,10 +16,7 @@
 			if ( options ) { 
 				$.extend( settings, options );
 			}
-			
-var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;clear:both;font-size:0;height:0;visibility:hidden}#nl_bg{background:url(http://static.globalgameport.com/network/bg.jpg) repeat-x scroll center top transparent;display:block;height:117px}#nl_top{width:1125px;height:92px;margin:0 auto;display:block;overflow:hidden;background:url(http://static.globalgameport.com/network/bg_balken.png) no-repeat right top}#nl_menu{width:1125px;height:25px;margin:0 auto;display:block;overflow:hidden}#nl_logo{width:194px;height:92px;float:left;display:block}#nl_promo{width:200px;height:92px;float:left;display:block;margin-top:1px}#nl_promo_load{display:block;height:90px;width:200px}#coin-slider-nl_promo{width:200px;float:left;overflow:hidden}#nl_werlead{width:728px;height:90px;float:right;display:block;padding-top:1px}#nl_netzwerkseiten a:link,#nl_netzwerkseiten a:visited{background:url(http://static.globalgameport.com/network/link_netzwerkseiten.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 70px 0 10px;width:155px}#nl_forum a:link,#nl_forum a:visited{background:url(http://static.globalgameport.com/network/link_forum.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_store a:link,#nl_store a:visited{background:url(http://static.globalgameport.com/network/link_astore.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_portal a:link,#nl_portal a:visited{background:url(http://static.globalgameport.com/network/link_portal.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 82px 0 0;width:155px}#nl_login a:link,#nl_login a:visited{background:url(http://static.globalgameport.com/network/link_userlogin.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:25px;margin:0 50px 0 0;width:155px}#nl_login.logged_in a:link,#nl_login.logged_in a:visited{background:0;font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#ggpUserDropdown{background:#0a0a0a;border-bottom-left-radius:5px;border-bottom-right-radius:5px;opacity:.7;padding:3px}#ggpUserDropdown ul{padding:0;margin:0}#ggpUserDropdown li{list-style:none;text-align:left}#ggpUserDropdown li:hover{background:#2a2a2a}#ggpUserDropdown li a{font-family:Arial,Helvetica;color:#ccc;text-decoration:none}#nl_netzwerkseiten a:hover,#nl_netzwerkseiten a.nl_netzwerkseiten_active,#nl_forum a:hover,#nl_store a:hover,#nl_portal a:hover,#nl_login a:hover{background-position:center bottom}#social_networks{background:url(http://static.globalgameport.com/network/txt_ggp_folgen.png) no-repeat scroll left top transparent;display:block;float:right;height:25px;margin:0 50px 0 0;width:150px}a#ggp_fb:link,a#ggp_fb:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 75px;width:19px}a#ggp_fb:hover{background-position:0 -20px;text-decoration:none}a#ggp_twitter:link,a#ggp_twitter:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -19px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_twitter:hover{background-position:-19px -20px;text-decoration:none}a#ggp_yt:link,a#ggp_yt:visited{background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll -39px 0 transparent;display:block;float:left;height:20px;margin:2px 0 0 1px;width:20px}a#ggp_yt:hover{background-position:-39px -20px;text-decoration:none}#nl_dropdown,#nl_sites_more{opacity:.9;background:#111;display:block;padding-left:4px;width:738px;margin-top:25px;margin-left:15px;font-family:arial,helvetica}#nl_dropdown img{outline:0}#nl_dropdown>div{float:left;margin:3px 0}#nl_our_sites span,#nl_our_partner span{color:#eee}#nl_dropdown ul{padding:0;margin:3px 7px 3px 0;background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top}#nl_dropdown ul>span{text-align:center;font:10pt arial,helvetica,clean;color:#eee;background:#111;font-weight:700;padding:2px 0 3px;width:100%;display:block;letter-spacing:-1px}#nl_dropdown li{list-style:none;display:block;margin:1px 0 1px 3px;background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top}#nl_dropdown a,#nl_topsites.nl_sites_more_open{color:#eee;display:block;font-size:11px;line-height:20px;padding:0 0 0 5px;text-decoration:none;text-transform:uppercase;text-align:left;cursor:pointer}#nl_topsites{width:534px;position:relative}.nl_topsites{width:260px;float:left}.nl_sites_open{display:block}.nl_sites a{padding:0 0}#nl_partner{width:180px}#nl_partner a{padding:0 5px}#nl_dropdown img{vertical-align:middle}#nl_dropdown li:hover,#nl_topsites.nl_sites_more_open #moresites{background:#b40404}#nl_dropdown li:hover a,#nl_topsites li:hover #nl_sites_more li:hover a{color:#fff;cursor:pointer}#nl_dropdown a.nl_site_ico{width:20px;height:20px;float:right;padding:0;margin:0;background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll transparent;display:block;border-left:1px solid #111}#nl_dropdown a.nl_site_ico_tw{background-position:-88px top}#nl_dropdown a.nl_site_ico_tw:hover{background-position:-88px bottom}#nl_dropdown a.nl_site_ico_yt{background-position:-128px top}#nl_dropdown a.nl_site_ico_yt:hover{background-position:-128px bottom}#nl_dropdown a.nl_site_ico_rs{background-position:-108px top}#nl_dropdown a.nl_site_ico_rs:hover{background-position:-108px bottom}#nl_dropdown a.nl_site_ico_bd{background-position:-59px top;width:29px}#nl_dropdown a.nl_site_ico_bd:hover{background-position:-59px bottom}#nl_dropdown a.nl_site_ico_fb{background-position:-148px top}#nl_dropdown a.nl_site_ico_fb:hover{background-position:-148px bottom}#nl_sites_more{display:none;z-index:999901;padding:5px 0 5px 5px}#nl_sites_more ul{float:left}#nl_sites_more li{width:230px}#nl_topsites.nl_sites_more_open #nl_sites_more{display:block;position:absolute;top:0;margin-top:-10px;left:130px}#moresites{background:#5a5a5a;font-size:9.5pt!important;font-weight:700;display:block;clear:both}a#moresites:hover{background:#06c}#moresites>span{width:20px;display:inline;background:0;font-size:1.5em}';
-		
-			if(typeof $.fn.CoinSlider == 'undefined') {
+			if(!settings.hide_top && typeof $.fn.CoinSlider == 'undefined') {
 				// load coin slider js (getscript of jQuery prevents caching so using ajax)
 				jQuery.ajax({
 					type: "GET",
@@ -31,76 +30,47 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 			
 			
 
-			$('head').append('<style>' + stylesheet + '</style>');		
+			$('head').append($('<link>').attr("rel", "stylesheet").attr("href", settings.style).attr("type", "text/css"));
 			var leiste = $("<div id='ggp_leiste'/>");
 			var wrap1 = $('<div align="center">').prependTo(leiste);
 			var nl = $('<div id="nl_bg">');
 			wrap1.append(nl);
 			var row1 = $('<div id="nl_top"></div>');
-			nl.append(row1);
+			if(!settings.hide_top) {
+				nl.append(row1);
+		    } else {
+		    	nl.css({'height':'25px'});
+		    }
 			var row2 = $('<div id="nl_menu"></div>');
 			nl.append(row2);
 			
-			
-			var logo = $('<div id="nl_logo"></div>');
-			row1.append(logo);
-			logo.append($('<a>')
-			.attr("href", "http://www.globalgameport.com")
-			.html(
-			$("<img>").width(194).height(92)
-			.attr('src','http://static.globalgameport.com/network/ggp_logo.png')
-			.attr('alt', 'Global Gameport - We Gather Worlds')
-			));
-			
-			var promo = $('<div id="nl_promo">');
-			row1.append(promo);
-			promo.append($('<a href="#" id="nl_promo_load">').html('<img style="margin:30px auto;" align="center" src="http://static.globalgameport.com/network/200x90/load.gif"/>'));
-			
-			var lb = $('<div id="nl_werlead">');
-			row1.append(lb);
-			var nl_lba = $('<div id="nl_lba" class="cf">');
-			lb.append(nl_lba);
-			
+			if(!settings.hide_top) {
+				var logo = $('<div id="nl_logo"></div>');
+				row1.append(logo);
+				logo.append($('<a>')
+				.attr("href", "http://www.globalgameport.com")
+				.html(
+				$("<img>").width(194).height(92)
+				.attr('src','http://static.globalgameport.com/network/ggp_logo.png')
+				.attr('alt', 'Global Gameport - We Gather Worlds')
+				));
+				
+				var promo = $('<div id="nl_promo">');
+				row1.append(promo);
+				promo.append($('<a href="#" id="nl_promo_load">').html('<img style="margin:30px auto;" align="center" src="http://static.globalgameport.com/network/200x90/load.gif"/>'));
+				
+				var lb = $('<div id="nl_werlead">');
+				row1.append(lb);
+				var nl_lba = $('<div id="nl_lba" class="cf">');
+				lb.append(nl_lba);
+			}
 			row2.append($('<div id="nl_netzwerkseiten">').html('<a href="javascript:void(0);"></a>'));
 			row2.append($('<div id="nl_forum">').html('<a target="_blank" href="http://www.globalgameport.com"></a>'));
 			row2.append($('<div id="nl_store">').html('<a target="_blank" href="http://shop.globalgameport.com"></a>'));
                   /*$("<div id='menu_portal'>")
 			.html('<a target="_blank" href="http://portal.globalgameport.com"></a>')
 			.appendTo(row2);*/
-			if(typeof Drupal !== "undefined" && Drupal.settings.ggp_user) {
-				if ( Drupal.settings.ggp_user.logged_in) {
-					var container = $('<ul id="ggpUserDropdown" style="display: none; position: absolute; z-index: 999999;">')
-					.append($('<li><a target="_blank" href="'+Drupal.settings.ggp_user.profile+'">Edit Profile</a></li>'))
-					.append($('<li><a href="/logout">Logout</a></li>'));
-					
-					row2.append($('<div id="nl_login" class="logged_in">')
-						.html('<a target="_blank" href="'+Drupal.settings.ggp_user.profile+'">'+Drupal.settings.ggp_user.username+'</a>')
-						
-					).append(container);
-					
-					$("#nl_login", row2).toggle(function() {
-						$("#ggpUserDropdown").show();
-						$(this).addClass("dropped");
-					},function(){
-						$("#ggpUserDropdown").hide();
-						$(this).removeClass("dropped");
-					});
-					$(document).bind('click', function(e) {
-							var clicked = $(e.target);
-								if($("#nl_login").hasClass("dropped"))
-									$( "#nl_login" ).click();
-
-						});
-					$(document).ready(function(){
-						var offset = $("#nl_login a").offset();
-						$("#ggpUserDropdown").offset({left: offset.left, top: 125});
-					});
-				} else {
-					row2.append($('<div id="nl_login">')
-						.html('<a href="'+Drupal.settings.ggp_user.log_in_link+'"></a>')
-					);
-				}
-			}
+			
 			
 			row2.append($('<div id="social_networks">')
 				.append($('<a id="ggp_fb" target="_blank" href="http://www.facebook.com/globalgameport"></a>'))
@@ -117,54 +87,54 @@ var stylesheet = 'img{border:0;outline:0}.cf:after{content:".";display:block;cle
 			leiste.slideDown();
 			
 			$(document).ready(function(){
-			
-			if (typeof settings.code != 'undefined') {
-				$('#nl_lba').writeCapture().html('<script src="'+settings.code+'" type="text/javascript"></script>');
-			} else if(typeof settings.adcont != 'undefined') {
-				var off = $('#nl_lba').position();
-				$('#'+settings.adcont).css({left: off.left, top: off.top});
-				$(window).resize(function() {
-					$('#'+settings.adcont).css({left: off.left, top: off.top});
-				});
-				var reposition = window.setInterval(function() {
-					$('#'+settings.adcont).css({left: off.left, top: off.top});
-				}, 1000);
-			}
-				if ( $.browser.msie && parseInt($.browser.version, 10) <= 7 ) {
-					var tmp = $("<a>");
-					$("#nl_promo").append(tmp);
-					tmp.append( $("<img>").attr("src", "http://static.globalgameport.com/network/200x90/ggp_slider_fehler.jpg")	);
-					$("#nl_promo_load").remove();
-				} else {
-					$.ajax({
-						url: settings.promoUrl,
-						dataType: 'jsonp',
-						success: function(data){
+				if(!settings.hide_top) {
+					if (typeof settings.code != 'undefined') {
+						$('#nl_lba').writeCapture().html('<script src="'+settings.code+'" type="text/javascript"></script>');
+					} else if(typeof settings.adcont != 'undefined') {
+						var off = $('#nl_lba').position();
+						$('#'+settings.adcont).css({left: off.left, top: off.top});
+						$(window).resize(function() {
+							$('#'+settings.adcont).css({left: off.left, top: off.top});
+						});
+						var reposition = window.setInterval(function() {
+							$('#'+settings.adcont).css({left: off.left, top: off.top});
+						}, 1000);
+					}
+					if ( $.browser.msie && parseInt($.browser.version, 10) <= 7 ) {
+						var tmp = $("<a>");
+						$("#nl_promo").append(tmp);
+						tmp.append( $("<img>").attr("src", "http://static.globalgameport.com/network/200x90/ggp_slider_fehler.jpg")	);
+						$("#nl_promo_load").remove();
+					} else {
+						$.ajax({
+							url: settings.promoUrl,
+							dataType: 'jsonp',
+							success: function(data){
 
-							$.each(data, function(i, e) {
-								var tmp = $("<a>").attr("href", e.href).attr("target","_blank");
-								$("#nl_promo").append(tmp);
-							
-								tmp.append( $("<img>").attr("src", "http://static.globalgameport.com/network/200x90/"+e.img)	);
-								if(typeof e.desc != "undefined") {
-									tmp.append( $("<span>").text(e.desc) );
+								$.each(data, function(i, e) {
+									var tmp = $("<a>").attr("href", e.href).attr("target","_blank");
+									$("#nl_promo").append(tmp);
+
+									tmp.append( $("<img>").attr("src", "http://static.globalgameport.com/network/200x90/"+e.img)	);
+									if(typeof e.desc != "undefined") {
+										tmp.append( $("<span>").text(e.desc) );
+									}
+								});
+
+								function isCoinLoad (t) {
+									if (typeof $.fn.CoinSlider == "undefined") { // if jQuery isn't loaded yet...
+									  if (t <= 5000) {setTimeout("isCoinLoad(" + (t + 200) + ")", 200); } 
+									} else {
+										$("#nl_promo_load").remove();
+										$("#nl_promo").coinslider({ width:200,height:90, navigation: false, delay: 3500 });
+									}
 								}
-							});
-						
-						
-							function isCoinLoad (t) {
-								if (typeof $.fn.CoinSlider == "undefined") { // if jQuery isn't loaded yet...
-								  if (t <= 5000) {setTimeout("isCoinLoad(" + (t + 200) + ")", 200); } 
-								} else {
-									$("#nl_promo_load").remove();
-									$("#nl_promo").coinslider({ width:200,height:90, navigation: false, delay: 3500 });
-								}
-							}
-							isCoinLoad(0);
-							
-						},
-						jsonp: 'jsonp'
-					});
+								isCoinLoad(0);
+
+							},
+							jsonp: 'jsonp'
+						});
+					}
 				}
 				$.ajax({
 					url: settings.sitesUrl,
