@@ -1,0 +1,3 @@
+[submodule "rack"]
+      path = lib/coins-slider
+      url = git://github.com/kopipejst/coin-slider.git
