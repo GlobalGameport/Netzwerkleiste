@@ -3,8 +3,8 @@
 	var settings = {
 			//'code'    : '',
 			//'adcont'	: '',
-			'promoUrl'		: 'http://static.globalgameport.com/network/promo.php',
-			'sitesUrl' 	: 'http://static.globalgameport.com/network/sites.php',
+			'promoUrl'  : 'http://static.globalgameport.com/network/promo.php',
+			'sitesUrl'  : 'http://static.globalgameport.com/network/sites.php',
 		};
 
 
@@ -87,27 +87,27 @@
 
 						var seiten = "";
 						$.each(data.topsites, function(i, e) {
-							if(i == 0) 
+							if(i === 0) 
 								seiten += '<ul id="nl_sites" class="nl_topsites">';
 							if (i == 15)
 								seiten += '<ul id="nl_sites2" class="nl_topsites">';
 							
-							seiten += '<li><a href="' + e.href + '" target="_blank">' + e.name + '</a>'
+							seiten += '<li><a href="' + e.href + '" target="_blank">' + e.name + '</a>';
 
 							// Social Links der Seiten hinzufügen
-							if(typeof e.tw != 'undefined' && e.tw != "") {
+							if(typeof e.tw !== 'undefined' && e.tw !== "") {
 								seiten += '<a class="nl_site_ico nl_site_ico_tw" href="http://twitter.com/' + e.tw + '" target="_blank">';
 							}
-							if(typeof e.fb != 'undefined' && e.fb!= "") {
+							if(typeof e.fb !== 'undefined' && e.fb !== "") {
 								seiten += '<a class="nl_site_ico nl_site_ico_fb" href="https://facebook.com/' + e.fb + '" target="_blank">';
 							}
-							if(typeof e.yt != 'undefined' && e.yt != "") {
+							if(typeof e.yt !== 'undefined' && e.yt !== "") {
 								seiten += '<a class="nl_site_ico nl_site_ico_yt" href="http://www.youtube.com/' + e.yt + '" target="_blank">';
 							}
-							if(typeof e.rs != 'undefined' && e.rs != "") {
+							if(typeof e.rs !== 'undefined' && e.rs !== "") {
 								seiten += '<a class="nl_site_ico nl_site_ico_rs" href="' + e.href+e.rs + '" target="_blank">';
 							}
-							if(typeof e.bd != 'undefined' && e.bd != "") {
+							if(typeof e.bd !== 'undefined' && e.bd !== "") {
 								seiten += '<a class="nl_site_ico nl_site_ico_bd" href="http://www.globalgameport.com/' + e.bd + '" target="_blank">';
 							}
 
@@ -119,24 +119,24 @@
 						var z = 0;
 						$.each(data.weitere, function(i, e) {
 							z++;
-							if(i % 20 == 0) 
+							if(i % 20 === 0) 
 								weitere += '<ul>';
 							weitere += '<li><a href="' + e.href + '" target="_blank">' + e.name + '</a></li>';
 
 							// Social Links der Seiten hinzufügen
-							if(typeof e.tw != 'undefined' && e.tw != "") {
+							if(typeof e.tw !== 'undefined' && e.tw !== "") {
 								weitere += '<a class="nl_site_ico nl_site_ico_tw" href="http://twitter.com/' + e.tw + '" target="_blank">';
 							}
-							if(typeof e.fb != 'undefined' && e.fb!= "") {
+							if(typeof e.fb !== 'undefined' && e.fb!== "") {
 								weitere += '<a class="nl_site_ico nl_site_ico_fb" href="https://facebook.com/' + e.fb + '" target="_blank">';
 							}
-							if(typeof e.yt != 'undefined' && e.yt != "") {
+							if(typeof e.yt !== 'undefined' && e.yt !== "") {
 								weitere += '<a class="nl_site_ico nl_site_ico_yt" href="http://www.youtube.com/' + e.yt + '" target="_blank">';
 							}
-							if(typeof e.rs != 'undefined' && e.rs != "") {
+							if(typeof e.rs !== 'undefined' && e.rs !== "") {
 								weitere += '<a class="nl_site_ico nl_site_ico_rs" href="' + e.href+e.rs + '" target="_blank">';
 							}
-							if(typeof e.bd != 'undefined' && e.bd != "") {
+							if(typeof e.bd !== 'undefined' && e.bd !== "") {
 								weitere += '<a class="nl_site_ico nl_site_ico_bd" href="http://www.globalgameport.com/' + e.bd + '" target="_blank">';
 							}
 
@@ -149,7 +149,7 @@
 							if(typeof e.ico != 'undefined') {
 								partner += '<img src="http://static.globalgameport.com/network/icons/' + e.ico + '" />';
 							}
-							partner += e.name + '</a><li>'
+							partner += e.name + '</a><li>';
 						});
 						container.find("#nl_sites_more").append(partner);
 
@@ -175,7 +175,7 @@
 						});
 						$(document).bind('click', function(e) {
 							var clicked = $(e.target);
-							if ( (clicked.parents("#nl_dropdown").length == 0 ) ) {
+							if ( (clicked.parents("#nl_dropdown").length === 0 ) ) {
 								if(container.hasClass("nl_sites_open"))
 									$( "#nl_netzwerkseiten a" ).click();
 
@@ -202,6 +202,6 @@
 			$.error( 'Method ' +  method + ' does not exist on jQuery.ggpleiste' );
 		}
 
-	}
+	};
 })(jQuery);
 

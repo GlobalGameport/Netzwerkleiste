@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
-    }
+    },
     concat: {
       options: {
         // define a string to put between each file in the concatenated output
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist-css', ['recess']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-fonts', 'dist-js']);
+  grunt.registerTask('dist', ['clean', 'dist-css', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'dist']);
