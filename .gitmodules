@@ -1,3 +1,6 @@
 [submodule "lib/coins-slider"]
-	path = lib/coins-slider
+	path = lib/coin-slider
 	url = git://github.com/kopipejst/coin-slider.git
+[submodule "lib/postscribe"]
+	path = lib/postscribe
+	url = git://github.com/krux/postscribe.git

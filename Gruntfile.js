@@ -30,11 +30,12 @@ module.exports = function(grunt) {
     concat: {
       options: {
         // define a string to put between each file in the concatenated output
-        separator: ';'
+        separator: ';',
+        banner: '<%= banner %>',
       },
       dist: {
         // the files to concatenate
-        src: ['js/*.js', 'lib/**/*.js'],
+        src: ['js/*.js', 'lib/postscribe/dist/postscribe.js', 'lib/coin-slider/coin-slider.js'],
         // the location of the resulting JS file
         dest: 'dist/<%= pkg.name %>.js'
       }
@@ -45,7 +46,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'dist/network.css' : ['less/style.less', 'lib/**/*.css'],
+          'dist/network.css' : ['less/style.less', 'lib/coin-slider/coin-slider-styles.css'],
         },
       },
     },
