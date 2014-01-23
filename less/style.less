@@ -1,0 +1,301 @@
+
+.menuItem(@url:"") {
+  a:link,
+  a:visited {
+    background: url(@url) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 25px;
+    margin: 0 82px 0 0;
+    width: 155px;
+  }
+}
+
+#ggp_leiste {
+  img{border:0; outline:none;}
+  .cf:after {
+    content: ".";
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  #nl_bg {
+  background:url("http://static.globalgameport.com/network/bg.jpg") repeat-x scroll center top transparent;
+  display:block;
+  height:117px;
+  }
+  #nl_top {
+  width:1125px;
+  height:92px;
+  margin:0 auto;
+  display:block;
+  overflow:hidden;
+  background:url("http://static.globalgameport.com/network/bg_balken.png") no-repeat right top;
+  }
+  #nl_menu {
+  width:1125px;
+  height:25px;
+  margin:0 auto;
+  display:block;
+  overflow:hidden;
+  }
+  #nl_logo {
+  width:194px;
+  height:92px;
+  float:left;
+  display:block;
+  }
+  #nl_promo {
+  width:200px;
+  height:92px;
+  float:left;
+  display:block;
+  margin-top:1px;
+  }
+  #nl_promo_load {
+  	display:block;
+  	height:90px;
+  	width:200px;
+  }
+  #coin-slider-nl_promo {
+  width:200px;
+  float:left;
+  overflow:hidden;
+  }
+  #nl_werlead {
+  width:728px;
+  height:90px;
+  float:right;
+  display:block;
+  padding-top:1px;
+  }
+  #nl_netzwerkseiten {
+    .menuItem("http://static.globalgameport.com/network/link_netzwerkseiten.png");
+  }
+  #nl_forum {
+    .menuItem("http://static.globalgameport.com/network/link_forum.png");
+  }
+  #nl_store {
+    .menuItem("http://static.globalgameport.com/network/link_astore.png");
+  }
+  #nl_portal {
+    .menuItem("http://static.globalgameport.com/network/link_portal.png");
+    }
+  #nl_login {
+    .menuItem("http://static.globalgameport.com/network/link_userlogin.png");
+  }
+  #nl_netzwerkseiten a:hover,
+  #nl_netzwerkseiten a.nl_netzwerkseiten_active,
+  #nl_forum a:hover,
+  #nl_store a:hover,
+  #nl_portal a:hover {
+  background-position: center bottom;
+  }
+  #social_networks {
+  background:url("http://static.globalgameport.com/network/txt_ggp_folgen.png") no-repeat scroll left top transparent;
+  display: block;
+  float: right;
+  height: 25px;
+  margin: 0 50px 0 0;
+  width: 150px;
+  }
+  a#ggp_fb:link,
+  a#ggp_fb:visited  {
+  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 2px 0 0 75px;
+  width: 19px;
+  }
+  a#ggp_fb:hover {
+  background-position: 0 -20px;
+  text-decoration: none;
+  }
+  a#ggp_twitter:link,
+  a#ggp_twitter:visited {
+  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll -19px 0 transparent;
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 2px 0 0 1px;
+  width: 20px;
+  }
+  a#ggp_twitter:hover {
+  background-position: -19px -20px;
+  text-decoration: none;
+  }
+  a#ggp_yt:link,
+  a#ggp_yt:visited {
+  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll -39px 0 transparent;
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 2px 0 0 1px;
+  width:20px;
+  }
+  a#ggp_yt:hover {
+  background-position: -39px -20px;
+  text-decoration: none;
+  }
+  /*
+  Netzwerkseiten DROPDOWN
+  */
+  #nl_dropdown, #nl_sites_more{
+  opacity:0.9;
+  background:#111111;
+  display: block;
+  padding-left:4px;
+  width: 738px;
+  margin-top:25px;
+  margin-left:15px;
+  font-family:arial, helvetica;
+  }
+  #nl_dropdown img{
+  outline:none;
+  }
+  #nl_dropdown > div {
+  float:left;
+  margin:3px 0px 3px 0;
+  }
+  #nl_our_sites span,
+  #nl_our_partner span {
+  color: #EEEEEE;
+  }
+  #nl_dropdown ul{
+  padding:0;
+  margin:3px 7px 3px 0;
+  background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top;
+  }
+
+  #nl_dropdown ul > span {
+  text-align:center;
+  font:10pt arial,helvetica,clean;
+  color:#eee;
+  background:#111;
+  font-weight:bold;
+  padding:2px 0 3px;
+  width:100%;
+  display:block;
+  letter-spacing:-1px;
+  }
+  #nl_dropdown li{
+  list-style:none;
+  display:block;
+  margin:1px 0 1px 3px;
+  background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top;
+  }
+
+  #nl_dropdown a,
+  #nl_topsites.nl_sites_more_open {
+  color: #EEEEEE;
+  display: block;
+  font-size: 11px;
+  line-height:20px;
+  padding: 0 0 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align:left;
+  cursor:pointer;
+  }
+  #nl_topsites {
+  width:534px;
+  position:relative;
+  }
+  .nl_topsites {
+  width:260px;
+  float:left;
+  }
+  .nl_sites_open {
+  display:block;
+  }
+  .nl_sites a{
+  padding:0 0px;
+  }
+  #nl_partner{
+  width:180px;
+  }
+  #nl_partner
+      a{padding:0 5px;
+  }
+  #nl_dropdown img {
+  vertical-align:middle;
+  }
+  #nl_dropdown li:hover,
+  #nl_topsites.nl_sites_more_open #moresites {
+  background:#B40404;
+  }
+  #nl_dropdown li:hover a,
+  #nl_topsites  li:hover #nl_sites_more li:hover a{
+  color:#fff;
+  cursor:pointer;
+  }
+
+  #nl_dropdown a.nl_site_ico
+  {
+  	width:20px;height:20px;float:right;
+  	padding:0;margin:0;background:url(http://static.globalgameport.com/network/link_social_buttons.png) no-repeat scroll transparent;
+  	display:block;
+  	border-left:1px solid #111;
+  }
+
+  #nl_dropdown a.nl_site_ico_tw{background-position:-88px top}
+  #nl_dropdown a.nl_site_ico_tw:hover{background-position:-88px bottom}
+  #nl_dropdown a.nl_site_ico_yt{background-position:-128px top}
+  #nl_dropdown a.nl_site_ico_yt:hover{background-position:-128px bottom}
+  #nl_dropdown a.nl_site_ico_rs{background-position:-108px top}
+  #nl_dropdown a.nl_site_ico_rs:hover{background-position:-108px bottom}
+  #nl_dropdown a.nl_site_ico_bd{background-position:-59px top;width:29px}
+  #nl_dropdown a.nl_site_ico_bd:hover{background-position:-59px bottom}
+  #nl_dropdown a.nl_site_ico_fb{background-position:-148px top}
+  #nl_dropdown a.nl_site_ico_fb:hover{background-position:-148px bottom}
+
+  #nl_sites_more{
+  display:none;
+  z-index:999901;
+  padding:5px 0 5px 5px;
+  }
+  #nl_sites_more ul {
+  float:left;
+  }
+  #nl_sites_more li{
+  width:230px;
+  }
+  /*#nl_sites li:hover #nl_sites_more,*/
+  #nl_topsites.nl_sites_more_open #nl_sites_more {
+  display:block;
+  position:absolute;
+  top:0;
+  margin-top:-10px;
+  left:130px;
+  }
+
+  /* Weitere Seiten + Hover */
+  #moresites
+  {
+  	background:#5a5a5a;
+  	font-size:9.5pt !important;
+  	font-weight:bold;
+  	display:block;
+  	clear:both;
+  }
+
+  a#moresites:hover
+  {
+  	background:#0066CC;
+  }
+  #moresites > span {
+  width:20px;
+  display:inline;
+  background:none;
+  font-size:1.5em;
+  }
+}
+
+@media screen and (max-width: 750px){
+  #ggp_leiste {
+    display:none;
+  }
+}
