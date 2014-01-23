@@ -5,6 +5,7 @@
  * @author Ivan Lazarevic
  * Examples and documentation at: http://workshop.rs/projects/coin-slider/
 
+ * @license
  * Licensed under MIT licence:
  *   http://www.opensource.org/licenses/mit-license.php
 **/

@@ -1,3 +1,10 @@
+/**
+ * GGP Netzwerkleiste
+ * @requires jQuery v1.7 or later
+ * @author valkum & vandit
+
+ * @license All rights reserved.
+**/
 (function ($) {
 
   var settings = {

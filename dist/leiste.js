@@ -5,6 +5,7 @@
  * @author Ivan Lazarevic
  * Examples and documentation at: http://workshop.rs/projects/coin-slider/
 
+ * @license
  * Licensed under MIT licence:
  *   http://www.opensource.org/licenses/mit-license.php
 **/
@@ -535,7 +536,14 @@
 	};
 
 })(jQuery);
-;(function ($) {
+;/**
+ * GGP Netzwerkleiste
+ * @requires jQuery v1.7 or later
+ * @author valkum & vandit
+
+ * @license All rights reserved.
+**/
+(function ($) {
 
   var settings = {
       'promoUrl'  : 'http://static.globalgameport.com/network/promo.php',
