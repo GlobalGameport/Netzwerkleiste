@@ -66,44 +66,44 @@
             //nl_menu.append($('<a>').addClass("linkPortal").html("http://portal.globalgameport.com").attr({target:"_blank"}));
             nl_footer.append(nl_menu);
 
-            var userDiv = $('<div>').addClass('userDiv');
-            nl_footer.append(userDiv);
-            if(user = userLoggedIn()){
-				var container = $('<ul id="ggpUserDropdown" style="display: none; position: absolute; z-index: 999999;">')
-					.append($('<li><a target="_blank" href="'+Drupal.settings.ggp_user.profile+'">Edit Profile</a></li>'))
-					.append($('<li><a href="/logout">Logout</a></li>'));
+            //var userDiv = $('<div>').addClass('userDiv');
+            //nl_footer.append(userDiv);
+            //if(user = userLoggedIn()){
+				//var container = $('<ul id="ggpUserDropdown" style="display: none; position: absolute; z-index: 999999;">')
+				//	.append($('<li><a target="_blank" href="'+Drupal.settings.ggp_user.profile+'">Edit Profile</a></li>'))
+				//	.append($('<li><a href="/logout">Logout</a></li>'));
 
-				userDiv.append(
-					$('<div>').addClass("user").append(
-						$('<a>').text(user.username).attr({href:user.profile, target:"_blank"})
-					)
+				//userDiv.append(
+				//	$('<div>').addClass("user").append(
+				//		$('<a>').text(user.username).attr({href:user.profile, target:"_blank"})
+				//	)
 
-				); //.append(container);
+				//); //.append(container);
 
-				$(".linkLogin", nl_menu).toggle(function() {
-					$("#ggpUserDropdown").show();
-					$(this).addClass("opened");
-				},function(){
-					$("#ggpUserDropdown").hide();
-					$(this).removeClass("opened");
-				});
-				$(document).bind('click', function(e) {
-					var clicked = $(e.target);
-					if($(".linkLogin").hasClass("opened"))
-						$( ".linkLogin" ).click();
-					});
-			} else {
-				nl_menu.append($('<a>').addClass("linkLogin").attr({href:Drupal.settings.ggp_user.log_in_link}));
-			}
-			function userLoggedIn() {
-				if(typeof Drupal !== "undefined" && Drupal.settings.ggp_user) {
-					if ( Drupal.settings.ggp_user.logged_in) {
-						var user = Drupal.settings.ggp_user;
-						return user;
-					}
-				}
-				return false;
-			}
+			// 	$(".linkLogin", nl_menu).toggle(function() {
+			// 		$("#ggpUserDropdown").show();
+			// 		$(this).addClass("opened");
+			// 	},function(){
+			// 		$("#ggpUserDropdown").hide();
+			// 		$(this).removeClass("opened");
+			// 	});
+			// 	$(document).bind('click', function(e) {
+			// 		var clicked = $(e.target);
+			// 		if($(".linkLogin").hasClass("opened"))
+			// 			$( ".linkLogin" ).click();
+			// 		});
+			// } else {
+			// 	nl_menu.append($('<a>').addClass("linkLogin").attr({href:Drupal.settings.ggp_user.log_in_link}));
+			// }
+			// function userLoggedIn() {
+			// 	if(typeof Drupal !== "undefined" && Drupal.settings.ggp_user) {
+			// 		if ( Drupal.settings.ggp_user.logged_in) {
+			// 			var user = Drupal.settings.ggp_user;
+			// 			return user;
+			// 		}
+			// 	}
+			// 	return false;
+			// }
 			nl_footer.append($('<div id="social_networks">')
 				.append($('<a id="ggp_fb" target="_blank" href="http://www.facebook.com/globalgameport"></a>'))
 
