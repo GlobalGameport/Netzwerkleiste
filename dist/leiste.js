@@ -13,7 +13,7 @@
       defaults = {
         promoUrl : "http://static.globalgameport.com/network/promo.php",
         sitesUrl : "http://static.globalgameport.com/network/sites.php",
-        cssUrl: "http://static.globalgameport.com/ggp_network-1.0.0.css",
+        cssUrl: "http://static.globalgameport.com/network/1.6.0/ggp_network.css",
         hide_top : false
   };
 
@@ -34,6 +34,82 @@
   }
 
   $.extend(Plugin.prototype, {
+    
+    init : function() {
+      var _this = this;
+
+      $("head").append($("<link>").attr({
+        rel: "stylesheet",
+        href: this.settings.cssUrl,
+        type: "text/css"
+      }));
+
+      $(this.element).addClass('ggp_leiste');
+      var wrap1 = $('<div align="center">').prependTo(this.element);
+      var nl = $('<div id="nl_bg">');
+      wrap1.append(nl);
+      var row1 = $('<div id="nl_top"></div>');
+      if(!this.settings.hide_top) {
+        nl.append(row1);
+      } else {
+        nl.css({'height':'25px'});
+      }
+      var row2 = $('<div id="nl_menu"></div>');
+      nl.append(row2);
+
+      if(!this.settings.hide_top) {
+        var logo = $('<div id="nl_logo"></div>');
+        row1.append(logo);
+        logo.append($('<a>')
+        .attr("href", "http://www.globalgameport.com")
+        .html(
+          $("<img>").attr({
+            src: 'http://static.globalgameport.com/network/ggp_logo.png',
+            alt: 'Global Gameport - We Gather Worlds',
+            width: 194,
+            height: 92
+          })
+        ));
+
+        var promo = $('<div id="nl_promo"><a href="#" id="nl_promo_load"><img style="margin:30px auto;" align="center" src="http://static.globalgameport.com/network/200x90/load.gif"/></a></div>');
+        row1.append(promo);
+        row1.append('<div id="nl_werlead"><div id="nl_lba" class="cf"></div></div>');
+      }
+      row2.append('<div id="nl_netzwerkseiten"><a href="javascript:void(0);"></a></div><div id="nl_forum"><a target="_blank" href="http://www.globalgameport.com"></a></div><div id="nl_store"><a target="_blank" href="http://shop.globalgameport.com"></a></div>');
+      row2.append('<div id="social_networks"><a id="ggp_fb" target="_blank" href="http://www.facebook.com/globalgameport"></a><a id="ggp_twitter" target="_blank" href="http://twitter.com/globalgameport"></a><a id="ggp_yt" target="_blank" href="http://www.youtube.com/user/globalgameport"></a><a id="ggp_yt2" target="_blank" href="http://www.youtube.com/user/GlobalGameportLive"></a></div>');
+
+
+
+      $(this.element).hide();
+      wrap1.appendTo(this.element);
+      $(this.element).slideDown();
+
+      $(document).ready(function(){
+        if(!_this.settings.hide_top) {
+          if (typeof _this.settings.code != 'undefined') {
+            postscribe("#nl_lba", _this.settings.code);
+          } else if(typeof _this.settings.adcont != 'undefined') {
+            var off = $('#nl_lba').position();
+            $(_this.settings.adcont).css({left: off.left, top: off.top});
+            $(window).resize(function() {
+              $(_this.settings.adcont).css({left: off.left, top: off.top});
+            });
+            var reposition = window.setInterval(function() {
+              $(_this.settings.adcont).css({left: off.left, top: off.top});
+            }, 1000);
+          }
+          if ( $.browser.msie && parseInt($.browser.version, 10) <= 7 ) {
+            var tmp = "<a><img src=http://static.globalgameport.com/network/200x90/ggp_slider_fehler.jpg /></a>";
+            $("#nl_promo").append(tmp);
+            $("#nl_promo_load").remove();
+          } else {
+            _this.loadPromos(this.element, this.settings);
+          }
+        }
+        _this.loadSites(this.element, this.settings);
+        $("body").addClass("ggp_network_loaded");
+      });
+    },
     loadSites: function() {
       $.ajax({
         url: this.settings.sitesUrl,
@@ -175,79 +251,6 @@
 
         },
         jsonp: 'jsonp'
-      });
-    },
-    init : function() {
-      var _this = this;
-
-      $("head").append($("<link>").attr({
-        rel: "stylesheet",
-        href: this.settings.cssUrl,
-        type: "text/css"
-      }));
-
-      $(this.element).addClass('ggp_leiste');
-      var wrap1 = $('<div align="center">').prependTo(this.element);
-      var nl = $('<div id="nl_bg">');
-      wrap1.append(nl);
-      var row1 = $('<div id="nl_top"></div>');
-      if(!this.settings.hide_top) {
-        nl.append(row1);
-      } else {
-        nl.css({'height':'25px'});
-      }
-      var row2 = $('<div id="nl_menu"></div>');
-      nl.append(row2);
-
-      if(!this.settings.hide_top) {
-        var logo = $('<div id="nl_logo"></div>');
-        row1.append(logo);
-        logo.append($('<a>')
-        .attr("href", "http://www.globalgameport.com")
-        .html(
-          $("<img>").attr({
-            src: 'http://static.globalgameport.com/network/ggp_logo.png',
-            alt: 'Global Gameport - We Gather Worlds',
-            width: 194,
-            height: 92
-          })
-        ));
-
-        var promo = $('<div id="nl_promo"><a href="#" id="nl_promo_load"><img style="margin:30px auto;" align="center" src="http://static.globalgameport.com/network/200x90/load.gif"/></a></div>');
-        row1.append(promo);
-        row1.append('<div id="nl_werlead"><div id="nl_lba" class="cf"></div></div>');
-      }
-      row2.append('<div id="nl_netzwerkseiten"><a href="javascript:void(0);"></a></div><div id="nl_forum"><a target="_blank" href="http://www.globalgameport.com"></a></div><div id="nl_store"><a target="_blank" href="http://shop.globalgameport.com"></a></div>');
-      row2.append('<div id="social_networks"><a id="ggp_fb" target="_blank" href="http://www.facebook.com/globalgameport"></a><a id="ggp_twitter" target="_blank" href="http://twitter.com/globalgameport"></a><a id="ggp_yt" target="_blank" href="http://www.youtube.com/user/globalgameport"></a><a id="ggp_yt2" target="_blank" href="http://www.youtube.com/user/GlobalGameportLive"></a></div>');
-
-
-
-      $(this.element).hide();
-      $(this.element).slideDown();
-
-      $(document).ready(function(){
-        if(!_this.settings.hide_top) {
-          if (typeof _this.settings.code != 'undefined') {
-            $('#nl_lba').writeCapture().html('<script src="'+_this.settings.code+'" type="text/javascript"></script>');
-          } else if(typeof _this.settings.adcont != 'undefined') {
-            var off = $('#nl_lba').position();
-            $(_this.settings.adcont).css({left: off.left, top: off.top});
-            $(window).resize(function() {
-              $(this.settings.adcont).css({left: off.left, top: off.top});
-            });
-            var reposition = window.setInterval(function() {
-              $(_this.settings.adcont).css({left: off.left, top: off.top});
-            }, 1000);
-          }
-          if ( $.browser.msie && parseInt($.browser.version, 10) <= 7 ) {
-            var tmp = "<a><img src=http://static.globalgameport.com/network/200x90/ggp_slider_fehler.jpg /></a>";
-            $("#nl_promo").append(tmp);
-            $("#nl_promo_load").remove();
-          } else {
-            _this.loadPromos(this.element, this.settings);
-          }
-        }
-        _this.loadSites(this.element, this.settings);
       });
     }
   });

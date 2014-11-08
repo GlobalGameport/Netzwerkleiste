@@ -16,25 +16,25 @@ module.exports = function(grunt) {
       minify: {
         expand: true,
         files: {
-          'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': ['dist/<%= pkg.name %>-<%= pkg.version %>.css']
+          'dist/<%= pkg.version %>/<%= pkg.name %>.min.css': ['dist/<%= pkg.version %>/<%= pkg.name %>.css']
         }
       }
     },
     concat: {
       js: {
         src: ['dist/leiste.js', 'lib/coin-slider/coin-slider.js', 'lib/postscribe/dist/postscribe.js'],
-        dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.js'
+        dest: 'dist/<%= pkg.version %>/<%= pkg.name %>.js'
       },
       css: {
         src: ['dist/leiste.css', 'lib/coin-slider/coin-slider-styles.css'],
-        dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.css'
+        dest: 'dist/<%= pkg.version %>/<%= pkg.name %>.css'
       }
 
     },
     uglify: {
       dist: {
         files: {
-          'dist/<%= pkg.name %>-<%= pkg.version %>.min.js': ['<%= concat.js.dest %>']
+          'dist/<%= pkg.version %>/<%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
         }
       }
     },

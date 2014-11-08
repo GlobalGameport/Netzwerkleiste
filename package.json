@@ -1,6 +1,6 @@
 {
   "name": "ggp_network",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "GGP Netzwerkleiste",
   "devDependencies": {
     "grunt": "~0.4.2",
