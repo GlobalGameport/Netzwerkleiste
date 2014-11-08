@@ -11,7 +11,7 @@
   }
 }
 
-#ggp_leiste {
+.ggp_leiste {
   img{border:0; outline:none;}
   .cf:after {
     content: ".";
@@ -94,111 +94,114 @@
   background-position: center bottom;
   }
   #social_networks {
-  background:url("http://static.globalgameport.com/network/txt_ggp_folgen.png") no-repeat scroll left top transparent;
-  display: block;
-  float: right;
-  height: 25px;
-  margin: 0 50px 0 0;
-  width: 150px;
+    background:url("http://static.globalgameport.com/network/txt_ggp_folgen.png") no-repeat scroll left top transparent;
+    display: block;
+    float: right;
+    height: 25px;
+    margin: 0 50px 0 0;
+    width: 170px;
+
+    a {
+      background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll transparent;
+      display: block;
+      float: left;
+      height: 20px;
+      margin: 2px 0 0 1px;
+      width: 20px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
-  a#ggp_fb:link,
-  a#ggp_fb:visited  {
-  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll 0 0 transparent;
-  display: block;
-  float: left;
-  height: 20px;
-  margin: 2px 0 0 75px;
-  width: 19px;
+  a#ggp_fb {
+    background-positionh: 0 0;
+    margin: 2px 0 0 75px;
+
+    &:hover {
+      background-position: 0 -20px;
+    }
   }
-  a#ggp_fb:hover {
-  background-position: 0 -20px;
-  text-decoration: none;
+  a#ggp_twitter:link {
+    background-position: -19px 0;
+
+    &:hover {
+      background-position: -19px -20px;
+    }
   }
-  a#ggp_twitter:link,
-  a#ggp_twitter:visited {
-  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll -19px 0 transparent;
-  display: block;
-  float: left;
-  height: 20px;
-  margin: 2px 0 0 1px;
-  width: 20px;
+  a#ggp_yt:link {
+    background-position: -39px 0;
+
+    &:hover {
+      background-position: -39px -20px;
+    }
   }
-  a#ggp_twitter:hover {
-  background-position: -19px -20px;
-  text-decoration: none;
+  a#ggp_yt2 {
+    background-position: -168px 0;
+
+    &:hover {
+      background-position: -168px -20px;
+    }
   }
-  a#ggp_yt:link,
-  a#ggp_yt:visited {
-  background:url("http://static.globalgameport.com/network/link_social_buttons.png") no-repeat scroll -39px 0 transparent;
-  display: block;
-  float: left;
-  height: 20px;
-  margin: 2px 0 0 1px;
-  width:20px;
-  }
-  a#ggp_yt:hover {
-  background-position: -39px -20px;
-  text-decoration: none;
-  }
-  /*
-  Netzwerkseiten DROPDOWN
-  */
+
   #nl_dropdown, #nl_sites_more{
-  opacity:0.9;
-  background:#111111;
-  display: block;
-  padding-left:4px;
-  width: 738px;
-  margin-top:25px;
-  margin-left:15px;
-  font-family:arial, helvetica;
+    opacity:0.9;
+    background:#111111;
+    display: block;
+    padding-left:4px;
+    width: 738px;
+    margin-top:25px;
+    margin-left:15px;
+    font-family:arial, helvetica;
   }
   #nl_dropdown img{
-  outline:none;
+    outline:none;
   }
   #nl_dropdown > div {
-  float:left;
-  margin:3px 0px 3px 0;
+    float:left;
+    margin:3px 0px 3px 0;
   }
   #nl_our_sites span,
   #nl_our_partner span {
-  color: #EEEEEE;
+    color: #EEEEEE;
   }
   #nl_dropdown ul{
-  padding:0;
-  margin:3px 7px 3px 0;
-  background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top;
+    padding:0;
+    margin:3px 7px 3px 0;
+    background:url(http://static.globalgameport.com/network/nl_menu_grafiken.png) repeat-y left top;
   }
 
   #nl_dropdown ul > span {
-  text-align:center;
-  font:10pt arial,helvetica,clean;
-  color:#eee;
-  background:#111;
-  font-weight:bold;
-  padding:2px 0 3px;
-  width:100%;
-  display:block;
-  letter-spacing:-1px;
+    text-align:center;
+    font:10pt arial,helvetica,clean;
+    color:#eee;
+    background:#111;
+    font-weight:bold;
+    padding:2px 0 3px;
+    width:100%;
+    display:block;
+    letter-spacing:-1px;
   }
   #nl_dropdown li{
-  list-style:none;
-  display:block;
-  margin:1px 0 1px 3px;
-  background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top;
+    list-style:none;
+    display:block;
+    margin:1px 0 1px 3px;
+    background:url(http://static.globalgameport.com/network/nl_menu_link_bg.png) repeat-x left top;
   }
 
   #nl_dropdown a,
   #nl_topsites.nl_sites_more_open {
-  color: #EEEEEE;
-  display: block;
-  font-size: 11px;
-  line-height:20px;
-  padding: 0 0 0 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align:left;
-  cursor:pointer;
+    color: #EEEEEE;
+    display: block;
+    font-size: 11px;
+    line-height:20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:left;
+    cursor:pointer;
+  }
+  #nl_dropdown a {
+    padding: 0 0 0 5px;
   }
   #nl_topsites {
   width:534px;
