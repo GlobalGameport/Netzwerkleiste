@@ -4,7 +4,7 @@
     enabled: true,
     container: null,
 
-    sitesURL: 'http://static.globalgameport.com/network/sites2.php',
+    sitesURL: 'https://static.globalgameport.com/network/sites2.php',
 
     content: {
       dropdownTitle: 'Global Gameport',
