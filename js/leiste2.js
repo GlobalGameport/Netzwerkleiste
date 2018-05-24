@@ -27,7 +27,8 @@
           ${elements.map(el => `<a target="_blank" href="${el.href}">${el.name}</a>`).join('')}
         </div>`
       },
-      buttonNews: '<a target="_blank" href="http://news.globalgameport.com/">News</a>',
+      // buttonNews: '<a target="_blank" href="http://news.globalgameport.com/">News</a>',
+      buttonNews: '',
       buttonForum: '<a target="_blank" href="https://www.globalgameport.com/forum.php">Forum</a>',
       buttonAmazon: '<a class="ggp_partner" target="_blank" href="https://www.amazon.de/?&tag=globalgamepor-21"><img src="https://static.globalgameport.com/block_logos/a_logo_small.png" alt="Amazon.de Link"> </a>',
       socials: (links) => {return `<div id="ggp_social_networks">
