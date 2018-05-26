@@ -110,6 +110,10 @@
     })
 
     window.addEventListener('click', (event) => {
+      if (!Element.prototype.matches) {
+          Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+      }
+      
       if (!event.target.matches('.ggp_dropbtn')) {
     
         var dropdowns = document.getElementsByClassName("ggp_dropdown-content");
